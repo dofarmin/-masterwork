@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: #f7f9fc;
+}
+/* header */
+header .navbar-brand{
+    color: #dc4f72;
+}
+/* nav_bar */
+
+.navbar-nav .nav-item .nav-link{
+    position: relative;
+}
+.navbar-nav .nav-item .nav-link::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: #dc4f72;
+    height: 3px;
+    display: inline-block;
+    transition: 0.5s;
+
+}
+
+.navbar-nav .nav-item .nav-link:hover::after{
+    width: 50%;
+    
+}
+
+
+.button_nav a{
+    transition: 0.5s;
+}
+.button_nav .btn-outline-primary:hover{
+   background-color: #dc4f72;
+   color: white;
+   border-color: #dc4f72;
+
+}
+.button_nav .theme-button{
+    display: inline-block;
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 30px;
+  
+}
+
+.button_nav .btn-outline-primary{
+     color: #dc4f72;
+    border-color: #dc4f72; 
+}
+
+
+.search_nav i{
+    width: 45px;
+    height: 45px;
+    background-color: #f7f9fc;
+    border-radius: 50%;
+    opacity: 0.7;
+    text-align: center;
+    line-height:38px;
+    transition: 0.5s;
+    font-size: 25px;
+
+}
+.search_nav .fa-solid:hover{
+    color: black;
+}
+
+
+/* carousel */
+.carousel .carousel-item img{
+    width: 40%;
+}
